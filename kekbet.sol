@@ -1,4 +1,4 @@
-pragma solidity ^0.4.24;
+pragma solidity 0.4.24;
 
 import "https://github.com/smartcontractkit/chainlink/blob/develop/evm-contracts/src/v0.4/ChainlinkClient.sol";
 
@@ -14,6 +14,8 @@ contract kekbet is ChainlinkClient {
     uint8 public house_earnings = 4; // percent
     uint public betLockTime = 0; // block
     uint public lastTransactionRec = 0; // block
+        uint256 public Results;
+
 
     Bet[] public voteA;
     Bet[] public voteB;
